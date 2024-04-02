@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: $white;
+    color: $grayishBlue;
+    font-family: $barlowSemibold;
+    font-weight: 600;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    //
+}
+
+// Attribution
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
