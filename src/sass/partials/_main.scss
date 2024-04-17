@@ -6,17 +6,82 @@ img {
 }
 
 body {
-    background-color: $white;
+    @include barlow-semibold;
     color: $grayishBlue;
-    font-family: $barlowSemibold;
-    font-weight: 600;
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 header {
-    //
+    background: url('./../../../images/desktop/image-header.jpg') top center
+        no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 260px;
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 115px;
+        .logo {
+            figure {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        nav {
+            position: relative;
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                li {
+                    margin-left: 45px;
+                    a {
+                        color: $white;
+                    }
+                    &.contact {
+                        a {
+                            @include fraunce-700;
+                            text-transform: uppercase;
+                            color: $darkBlue;
+                            background-color: $white;
+                            border-radius: 30px;
+                            padding: 15px 35px;
+                            display: inline-block;
+                            transition: 0.3s;
+                            &:hover {
+                                color: $white;
+                                background-color: hsl(0deg 0% 100% / 36%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1 {
+        @include fraunce-900;
+        color: $white;
+        letter-spacing: 12px;
+        font-size: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 80px;
+    }
+    .icon-arrow-down {
+        position: relative;
+        text-align: center;
+        .figure {
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
 // Attribution

@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -11967,10 +11968,10 @@ textarea.form-control-lg {
   }
 }
 /**
-*  Fonts Barlow and Fraunces
+*  Fonts Barlow
 **/
 /**
-* Custom fonts
+*  Fonts Fraunces
 **/
 a {
   text-decoration: none;
@@ -11981,13 +11982,85 @@ img {
 }
 
 body {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(210, 4%, 67%);
   font-family: "Barlow", sans-serif;
   font-weight: 600;
+  font-style: normal;
+  color: hsl(210, 4%, 67%);
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background: url("./../../../images/desktop/image-header.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 260px;
+}
+header .main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 115px;
+}
+header .main-menu .logo figure {
+  margin: 0;
+  padding: 0;
+}
+header .main-menu nav {
+  position: relative;
+}
+header .main-menu nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+header .main-menu nav ul li {
+  margin-left: 45px;
+}
+header .main-menu nav ul li a {
+  color: hsl(0, 0%, 100%);
+}
+header .main-menu nav ul li.contact a {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: hsl(198, 62%, 26%);
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  padding: 15px 35px;
+  display: inline-block;
+  transition: 0.3s;
+}
+header .main-menu nav ul li.contact a:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, 0.36);
+}
+header h1, header .h1 {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 12px;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 80px;
+}
+header .icon-arrow-down {
+  position: relative;
+  text-align: center;
+}
+header .icon-arrow-down .figure {
+  margin: 0;
+  padding: 0;
 }
 
 .attribution {

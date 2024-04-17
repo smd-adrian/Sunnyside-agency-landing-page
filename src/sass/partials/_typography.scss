@@ -1,21 +1,35 @@
 /**
-*  Fonts Barlow and Fraunces
+*  Fonts Barlow
 **/
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+
+@mixin barlow-regular {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin barlow-semibold {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
 
 /**
-* Custom fonts
+*  Fonts Fraunces
 **/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
-// @font-face {
-//     font-family: 'Inter-ExtraBold';
-//     src: url('../fonts/Inter/Inter-ExtraBold.eot');
-//     src: url('../fonts/Inter/Inter-ExtraBold.eot?#iefix')
-//             format('embedded-opentype'),
-//         url('../fonts/Inter/Inter-ExtraBold.woff2') format('woff2'),
-//         url('../fonts/Inter/Inter-ExtraBold.woff') format('woff'),
-//         url('../fonts/Inter/Inter-ExtraBold.ttf') format('truetype'),
-//         url('../fonts/Inter/Inter-ExtraBold.svg#Inter-ExtraBold') format('svg');
-//     font-weight: 800;
-//     font-style: normal;
-// }
+@mixin fraunce-700 {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin fraunce-900 {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
