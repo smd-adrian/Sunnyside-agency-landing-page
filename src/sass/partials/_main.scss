@@ -14,9 +14,9 @@ body {
 }
 
 header {
-    background: url('./../../../images/desktop/image-header.jpg') top center
-        no-repeat;
-    background-size: cover;
+    background: #3ebfff url('./../../../images/desktop/image-header.jpg') top
+        center no-repeat;
+    background-size: contain;
     position: relative;
     padding-top: 30px;
     padding-bottom: 260px;
@@ -80,6 +80,102 @@ header {
         .figure {
             margin: 0;
             padding: 0;
+        }
+    }
+}
+
+.sections-home {
+    position: relative;
+    .background {
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        figure {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    }
+    .information {
+        min-height: 558px;
+        display: flex;
+        align-items: center;
+        .content {
+            max-width: 450px;
+            margin: 0 auto;
+            h2 {
+                @include fraunce-900;
+                font-size: 40px;
+                color: $veryDarkDesaturatedBlue;
+                margin-bottom: 25px;
+            }
+            p {
+                font-size: 18px;
+            }
+            a {
+                @include fraunce-900;
+                text-transform: uppercase;
+                color: $veryDarkDesaturatedBlue;
+                font-size: 18px;
+                letter-spacing: 1.5px;
+                padding: 0px 8px;
+                margin-top: 25px;
+                padding-bottom: 10px;
+                position: relative;
+                display: inline-block;
+                z-index: 3;
+                span {
+                    height: 9px;
+                    width: 158px;
+                    position: absolute;
+                    bottom: 11px;
+                    left: 0;
+                    border-radius: 5px;
+                    z-index: -1;
+                    width: 158px;
+                }
+            }
+        }
+    }
+    &.brand {
+        .background {
+            background-color: $yellow;
+            // background-image: url('./../../../images/desktop/image-transform.jpg');
+        }
+        .information {
+            .content {
+                a {
+                    &:hover {
+                        span {
+                            background-color: $yellow;
+                        }
+                    }
+                    span {
+                        background-color: hsl(51deg 100% 49% / 45%);
+                    }
+                }
+            }
+        }
+    }
+    &.stand-out {
+        .background {
+            background-color: $softRed;
+            // background-image: url('./../../../images/desktop/image-stand-out.jpg');
+        }
+        .information {
+            .content {
+                a {
+                    &:hover {
+                        span {
+                            background-color: $softRed;
+                        }
+                    }
+                    span {
+                        background-color: hsl(5.81deg 100% 49% / 23%);
+                    }
+                }
+            }
         }
     }
 }
