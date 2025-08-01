@@ -51,8 +51,8 @@
                 }
             }
             .hamburger-icon {
-                background: url('./../../../images/icon-hamburger.svg')
-                    no-repeat center center;
+                background: url('../images/icon-hamburger.svg') no-repeat center
+                    center;
                 background-size: contain;
                 width: 24px;
                 height: 24px;
@@ -85,8 +85,8 @@
 
 @media only screen and (max-width: 540px) {
     header {
-        background: #3ebfff url('./../../../images/mobile/image-header.jpg')
-            bottom center no-repeat;
+        background: #3ebfff url('../images/mobile/image-header.jpg') bottom
+            center no-repeat;
         background-size: cover;
         padding-bottom: 30px;
         h1 {
@@ -116,13 +116,13 @@
             }
         }
         .graphic-desing {
-            background: url('./../../../images/mobile/image-graphic-design.jpg')
-                top center no-repeat;
+            background: url('../images/mobile/image-graphic-design.jpg') top
+                center no-repeat;
             background-size: cover;
         }
         .photography {
-            background: url('./../../../images/mobile/image-photography.jpg')
-                top center no-repeat;
+            background: url('../images/mobile/image-photography.jpg') top center
+                no-repeat;
             background-size: cover;
         }
     }
