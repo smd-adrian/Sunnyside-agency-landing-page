@@ -1,7 +1,149 @@
 @media only screen and (max-width: 767px) {
-    //
+    header {
+        .main-menu {
+            margin-bottom: 100px;
+            nav {
+                position: absolute;
+                top: 70px;
+                right: 0px;
+                background: $white;
+                padding: 30px 0;
+                width: 100%;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                border-radius: 2px;
+                opacity: 0;
+                transform: translateY(-10px);
+                pointer-events: none;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                z-index: 1000;
+                &.show {
+                    opacity: 1;
+                    transform: translateY(0);
+                    pointer-events: auto;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -14px;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-left: 15px solid transparent;
+                    border-right: 0 solid transparent;
+                    border-bottom: 15px solid $white;
+                }
+                ul {
+                    flex-direction: column;
+                    li {
+                        margin: 0;
+                        a {
+                            color: $darkGrayishBlue;
+                            padding: 10px 0px;
+                            display: block;
+                        }
+                        &.contact {
+                            margin-top: 20px;
+                            a {
+                                background: $yellow;
+                            }
+                        }
+                    }
+                }
+            }
+            .hamburger-icon {
+                background: url('./../../../images/icon-hamburger.svg')
+                    no-repeat center center;
+                background-size: contain;
+                width: 24px;
+                height: 24px;
+                display: block;
+            }
+        }
+    }
+
+    .sections-home {
+        .information {
+            min-height: auto;
+            .content {
+                padding: 70px 15px;
+                text-align: center;
+            }
+        }
+        .background {
+            min-height: auto;
+        }
+    }
+
+    .sections-vertical {
+        .content {
+            .information {
+                padding: 70px 15px;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 540px) {
-    //
+    header {
+        background: #3ebfff url('./../../../images/mobile/image-header.jpg')
+            bottom center no-repeat;
+        background-size: cover;
+        padding-bottom: 30px;
+        h1 {
+            font-size: 30px;
+            padding-bottom: 0;
+            margin-bottom: 150px;
+        }
+        .icon-arrow-down {
+            bottom: 84px;
+        }
+    }
+
+    .sections-vertical {
+        .graphic-desing,
+        .photography {
+            min-height: 620px;
+            figure {
+                display: none;
+            }
+            .content {
+                bottom: 0;
+                .information {
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .graphic-desing {
+            background: url('./../../../images/mobile/image-graphic-design.jpg')
+                top center no-repeat;
+            background-size: cover;
+        }
+        .photography {
+            background: url('./../../../images/mobile/image-photography.jpg')
+                top center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .testimonials {
+        padding-bottom: 70px;
+        .information {
+            margin-bottom: 80px;
+            .client {
+                margin-top: 35px;
+            }
+        }
+    }
+
+    footer {
+        .links {
+            ul {
+                li {
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
 }

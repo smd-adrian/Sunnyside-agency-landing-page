@@ -6,17 +6,416 @@ img {
 }
 
 body {
-    background-color: $white;
+    @include barlow-semibold;
     color: $grayishBlue;
-    font-family: $barlowSemibold;
-    font-weight: 600;
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 header {
-    //
+    background: #3ebfff url('./../../../images/desktop/image-header.jpg') bottom
+        center no-repeat;
+    background-size: contain;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 260px;
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 115px;
+        position: relative;
+        .hamburger-icon {
+            display: none;
+        }
+        .logo {
+            figure {
+                margin: 0;
+                padding: 0;
+            }
+        }
+        nav {
+            position: relative;
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                li {
+                    margin-left: 45px;
+                    a {
+                        color: $white;
+                    }
+                    &.contact {
+                        a {
+                            @include fraunce-700;
+                            text-transform: uppercase;
+                            color: $darkBlue;
+                            background-color: $white;
+                            border-radius: 30px;
+                            padding: 15px 35px;
+                            display: inline-block;
+                            transition: 0.3s;
+                            &:hover {
+                                color: $white;
+                                background-color: hsl(0deg 0% 100% / 36%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1 {
+        @include fraunce-900;
+        color: $white;
+        letter-spacing: 12px;
+        font-size: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 80px;
+    }
+    .icon-arrow-down {
+        position: relative;
+        text-align: center;
+        .figure {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.sections-home {
+    position: relative;
+    .background {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        min-height: 558px;
+        figure {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+
+    .information {
+        min-height: 558px;
+        display: flex;
+        align-items: center;
+        .content {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 15px;
+            h2 {
+                @include fraunce-900;
+                font-size: 40px;
+                color: $veryDarkDesaturatedBlue;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+                color: $darkGrayishBlue;
+            }
+
+            a {
+                @include fraunce-900;
+                text-transform: uppercase;
+                color: $veryDarkDesaturatedBlue;
+                font-size: 18px;
+                letter-spacing: 1.5px;
+                padding: 0 8px;
+                margin-top: 25px;
+                position: relative;
+                display: inline-block;
+                z-index: 3;
+                transition: color 0.3s ease;
+
+                span {
+                    height: 9px;
+                    width: 158px;
+                    position: absolute;
+                    bottom: 2px;
+                    left: 0;
+                    border-radius: 5px;
+                    z-index: -1;
+                    background-color: hsl(51deg 100% 49% / 45%);
+                    transition: background-color 0.3s ease;
+                }
+
+                &:hover {
+                    color: $veryDarkDesaturatedBlue;
+                    span {
+                        background-color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    &.brand {
+        .information {
+            .content {
+                a {
+                    span {
+                        background-color: hsl(51deg 100% 49% / 45%);
+                    }
+
+                    &:hover {
+                        span {
+                            background-color: $yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.stand-out {
+        .information {
+            .content {
+                a {
+                    span {
+                        background-color: hsl(5.81deg 100% 49% / 23%);
+                    }
+
+                    &:hover {
+                        span {
+                            background-color: $softRed;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sections-vertical {
+    position: relative;
+    figure {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        min-height: 558px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    .content {
+        position: absolute;
+        width: 100%;
+        bottom: 30px;
+        .information {
+            max-width: 430px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0px 15px;
+            h2 {
+                @include fraunce-900;
+                font-size: 30px;
+                color: $darkBlue;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+                color: $darkBlue;
+            }
+        }
+    }
+}
+
+.testimonials {
+    position: relative;
+    padding: 150px 0;
+    h2 {
+        @include fraunce-900;
+        color: $grayishBlue;
+        font-size: 18px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        display: block;
+        padding: 0;
+        position: relative;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .information {
+        text-align: center;
+        figure {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 60px;
+            img {
+                object-fit: cover;
+                display: inline-block;
+                border-radius: 50%;
+                height: 76px;
+            }
+        }
+        p {
+            color: $veryDarkGrayishBlue;
+            margin: 0;
+        }
+        .client {
+            margin-top: 60px;
+            h4 {
+                @include fraunce-900;
+                color: $veryDarkDesaturatedBlue;
+                font-size: 18px;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 10px;
+            }
+            p {
+                color: $grayishBlue;
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.gallery {
+    position: relative;
+    figure {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.2s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    padding: 60px 0;
+    background-color: $DarkOpacityCyan;
+    h2 {
+        @include barlow-black;
+        color: $darkDesaturatedCyan;
+        font-size: 35px;
+        margin-bottom: 40px;
+        text-transform: lowercase;
+        display: block;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .links {
+        position: relative;
+        margin-bottom: 75px;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                padding: 0 35px;
+                a {
+                    font-size: 18px;
+                    color: $darkDesaturatedCyan;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .social {
+        position: relative;
+        ul {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                a {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    text-indent: -9999px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    background-color: $darkDesaturatedCyan;
+                    transition: background-color 0.3s ease;
+                }
+
+                &.facebook a {
+                    mask: url('./../../../images/icon-facebook.svg') no-repeat
+                        center;
+                    background-size: contain;
+                    -webkit-mask: url('./../../../images/icon-facebook.svg')
+                        no-repeat center;
+                    background-size: contain;
+                }
+
+                &.instagram a {
+                    mask: url('./../../../images/icon-instagram.svg') no-repeat
+                        center;
+                    background-size: contain;
+                    -webkit-mask: url('./../../../images/icon-instagram.svg')
+                        no-repeat center;
+                    background-size: contain;
+                }
+
+                &.twitter a {
+                    mask: url('./../../../images/icon-twitter.svg') no-repeat
+                        center;
+                    background-size: contain;
+                    -webkit-mask: url('./../../../images/icon-twitter.svg')
+                        no-repeat center;
+                    background-size: contain;
+                }
+
+                &.pinterest a {
+                    mask: url('./../../../images/icon-pinterest.svg') no-repeat
+                        center;
+                    background-size: contain;
+                    -webkit-mask: url('./../../../images/icon-pinterest.svg')
+                        no-repeat center;
+                    background-size: contain;
+                }
+
+                a:hover {
+                    background-color: $white;
+                }
+            }
+        }
+    }
 }
 
 // Attribution
