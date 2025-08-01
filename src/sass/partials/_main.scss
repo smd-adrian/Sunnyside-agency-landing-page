@@ -14,8 +14,8 @@ body {
 }
 
 header {
-    background: #3ebfff url('../../../images/desktop/image-header.jpg') bottom
-        center no-repeat;
+    background: #3ebfff url('../images/desktop/image-header.jpg') bottom center
+        no-repeat;
     background-size: contain;
     position: relative;
     padding-top: 30px;
@@ -375,38 +375,34 @@ footer {
                 }
 
                 &.facebook a {
-                    mask: url('../../../images/icon-facebook.svg') no-repeat
-                        center;
+                    mask: url('../images/icon-facebook.svg') no-repeat center;
                     background-size: contain;
-                    -webkit-mask: url('../../../images/icon-facebook.svg')
-                        no-repeat center;
+                    -webkit-mask: url('../images/icon-facebook.svg') no-repeat
+                        center;
                     background-size: contain;
                 }
 
                 &.instagram a {
-                    mask: url('../../../images/icon-instagram.svg') no-repeat
-                        center;
+                    mask: url('../images/icon-instagram.svg') no-repeat center;
                     background-size: contain;
-                    -webkit-mask: url('../../../images/icon-instagram.svg')
-                        no-repeat center;
+                    -webkit-mask: url('../images/icon-instagram.svg') no-repeat
+                        center;
                     background-size: contain;
                 }
 
                 &.twitter a {
-                    mask: url('../../../images/icon-twitter.svg') no-repeat
-                        center;
+                    mask: url('../images/icon-twitter.svg') no-repeat center;
                     background-size: contain;
-                    -webkit-mask: url('../../../images/icon-twitter.svg')
-                        no-repeat center;
+                    -webkit-mask: url('../images/icon-twitter.svg') no-repeat
+                        center;
                     background-size: contain;
                 }
 
                 &.pinterest a {
-                    mask: url('../../../images/icon-pinterest.svg') no-repeat
-                        center;
+                    mask: url('../images/icon-pinterest.svg') no-repeat center;
                     background-size: contain;
-                    -webkit-mask: url('../../../images/icon-pinterest.svg')
-                        no-repeat center;
+                    -webkit-mask: url('../images/icon-pinterest.svg') no-repeat
+                        center;
                     background-size: contain;
                 }
 

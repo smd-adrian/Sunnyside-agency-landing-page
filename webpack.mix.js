@@ -16,6 +16,8 @@ mix.js('src/js/app.js', 'js')
     })
     .setPublicPath('dist');
 
+mix.copyDirectory('images', 'dist/images');
+
 if (mix.inProduction()) {
     mix.sourceMaps().version();
 }
