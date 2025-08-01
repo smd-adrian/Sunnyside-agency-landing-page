@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Sunnyside Landing Page Screenshot](./screenshot.jpg)
+![Sunnyside Landing Page Screenshot](./screenshot.png)
 
 ### Links
 
