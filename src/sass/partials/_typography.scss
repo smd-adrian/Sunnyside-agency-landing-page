@@ -1,7 +1,7 @@
 /**
 *  Fonts Barlow
 **/
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap');
 
 @mixin barlow-regular {
     font-family: 'Barlow', sans-serif;
@@ -12,6 +12,12 @@
 @mixin barlow-semibold {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
+    font-style: normal;
+}
+
+@mixin barlow-black {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
     font-style: normal;
 }
 
